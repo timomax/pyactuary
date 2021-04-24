@@ -1,0 +1,2 @@
+# PyActuary
+C++ actuarial library
