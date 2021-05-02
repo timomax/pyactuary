@@ -18,8 +18,8 @@ __version__ = "0.0.1"
 #   reproducible builds (https://github.com/pybind/python_example/pull/53)
 
 ext_modules = [
-    Pybind11Extension("python_example",
-        ["src/main.cpp"],
+    Pybind11Extension("PyActuary",
+        ["src/PyActuaryCPP/PyActuary/main.cpp", "src/PyActuaryCPP/PyActuary/LifeTable.cpp"],
         # Example: passing in the version to the compiled code
         define_macros = [('VERSION_INFO', __version__)],
         ),
