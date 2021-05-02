@@ -18,7 +18,7 @@ __version__ = "0.0.01"
 #   reproducible builds (https://github.com/pybind/python_example/pull/53)
 
 ext_modules = [
-    Pybind11Extension("PyActuary",
+    Pybind11Extension("pyactuary",
         ["src/PyActuaryCPP/PyActuary/main.cpp", "src/PyActuaryCPP/PyActuary/LifeTable.cpp"],
         # Example: passing in the version to the compiled code
         define_macros = [('VERSION_INFO', __version__)],
@@ -26,7 +26,7 @@ ext_modules = [
 ]
 
 setup(
-    name="PyActuary",
+    name="pyactuary",
     version=__version__,
     author="Tim Galvin",
     author_email="timgalvin@gmail.com",
