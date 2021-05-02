@@ -6,7 +6,7 @@ from pybind11 import get_cmake_dir
 
 import sys
 
-__version__ = "0.0.1"
+__version__ = "0.0.01"
 
 # The main interface is through Pybind11Extension.
 # * You can add cxx_std=11/14/17, and then build_ext can be removed.
@@ -26,12 +26,12 @@ ext_modules = [
 ]
 
 setup(
-    name="python_example",
+    name="PyActuary",
     version=__version__,
-    author="Sylvain Corlay",
-    author_email="sylvain.corlay@gmail.com",
-    url="https://github.com/pybind/python_example",
-    description="A test project using pybind11",
+    author="Tim Galvin",
+    author_email="timgalvin@gmail.com",
+    url="https://github.com/timomax/PyActuary",
+    description="Life actuarial library",
     long_description="",
     ext_modules=ext_modules,
     extras_require={"test": "pytest"},
