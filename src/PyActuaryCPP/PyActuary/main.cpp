@@ -8,7 +8,7 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(PyActuary, m) {
+PYBIND11_MODULE(pyactuary, m) {
 
     py::class_<LifeTable, std::shared_ptr<LifeTable>>(m, "LifeTable")
         .def(py::init<std::map<int,double>>())
