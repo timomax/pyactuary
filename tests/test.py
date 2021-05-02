@@ -1,4 +1,4 @@
-import PyActuary as pa
+import pyactuary as pa
 
 
 #assert m.__version__ == '0.0.1'
